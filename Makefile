@@ -1,0 +1,2 @@
+outdated:
+	pnpm -r outdated

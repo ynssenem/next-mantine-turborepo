@@ -1,0 +1,50 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack --port 3002",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --max-warnings 0",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mantine/carousel": "catalog:mantine",
+    "@mantine/charts": "catalog:mantine",
+    "@mantine/code-highlight": "catalog:mantine",
+    "@mantine/core": "catalog:mantine",
+    "@mantine/dates": "catalog:mantine",
+    "@mantine/dropzone": "catalog:mantine",
+    "@mantine/form": "catalog:mantine",
+    "@mantine/hooks": "catalog:mantine",
+    "@mantine/modals": "catalog:mantine",
+    "@mantine/notifications": "catalog:mantine",
+    "@mantine/nprogress": "catalog:mantine",
+    "@mantine/spotlight": "catalog:mantine",
+    "@mantine/tiptap": "catalog:mantine",
+    "@repo/ui": "workspace:*",
+    "@tiptap/extension-link": "catalog:tiptap",
+    "@tiptap/pm": "catalog:tiptap",
+    "@tiptap/react": "catalog:tiptap",
+    "@tiptap/starter-kit": "catalog:tiptap",
+    "dayjs": "catalog:",
+    "embla-carousel-react": "catalog:",
+    "next": "catalog:nextjs",
+    "react": "catalog:nextjs",
+    "react-dom": "catalog:nextjs",
+    "recharts": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "catalog:nodejs",
+    "@types/react": "catalog:nodejs",
+    "@types/react-dom": "catalog:nodejs",
+    "autoprefixer": "catalog:postcss",
+    "postcss": "catalog:postcss",
+    "postcss-preset-mantine": "catalog:postcss",
+    "postcss-simple-vars": "catalog:postcss",
+    "typescript": "catalog:nodejs"
+  }
+}
