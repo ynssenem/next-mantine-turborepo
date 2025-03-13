@@ -1,84 +1,51 @@
-# Turborepo starter
+# Next.js Mantine Turborepo Boilerplate
 
-This Turborepo starter is maintained by the Turborepo core team.
+This repository is a boilerplate for developing modern web applications using Next.js, Mantine UI, and Turborepo. The monorepo architecture optimizes code sharing and development processes.
 
-## Using this example
+## Features
 
-Run the following command:
+- **Turborepo**: Efficient build and development processes in a monorepo structure
+- **Next.js App Router**: React framework for modern web applications
+- **Mantine UI**: Ready-to-use UI components with theme support
+- **TypeScript**: Type safety and improved developer experience
+- **pnpm**: Fast and disk space-efficient package manager
+- **Biome**: Linting and code formatting
 
-```sh
-npx create-turbo@latest
-```
+## Structure
 
-## What's inside?
+- `apps/web`: The main Next.js application
+- `packages/ui`: Shared UI components
+- `packages/typescript-config`: Shared TypeScript configuration
 
-This Turborepo includes the following packages/apps:
+## Installation
 
-### Apps and Packages
+```bash
+# Install pnpm (if not already installed)
+npm install -g pnpm
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+# Install dependencies
+pnpm install
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
+# Run in development mode
 pnpm dev
 ```
 
-### Remote Caching
+## Usage
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+Add a new page by creating a new folder in the `apps/web/app` directory. Create UI components in the `packages/ui/src` directory and import them into your application.
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+## Building for Production
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+```bash
+# Build all applications and packages
+pnpm build
 
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
+# Start the production server
+pnpm start
 ```
 
-## Useful Links
+## Scripts
 
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- `pnpm dev`: Start all applications in development mode
+- `pnpm build`: Build all applications and packages
+- `pnpm clean`: Clean build artifacts and node_modules

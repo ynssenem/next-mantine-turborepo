@@ -1,4 +1,3 @@
-import postcssPlugin from "esbuild-postcss";
 import { defineConfig } from "tsup";
 
 export default defineConfig((options) => ({
@@ -11,22 +10,8 @@ export default defineConfig((options) => ({
 	target: "es2022",
 	external: ["react", "react/jsx-runtime"],
 	minify: !options.watch,
-	// banner: { js: '"use client";' },
 	treeshake: true,
 	loader: {
 		".css": "default",
-	},
-	esbuildPlugins: [
-		postcssPlugin({
-			extensions: [".css"],
-		}),
-	],
-	esbuildOptions(options) {
-		options.loader = {
-			...options.loader,
-			".css": "css",
-		};
-
-		options.format = "esm";
 	},
 }));

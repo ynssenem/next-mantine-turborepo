@@ -34,7 +34,6 @@
     "@types/react": "catalog:nodejs",
     "@types/react-dom": "catalog:nodejs",
     "autoprefixer": "catalog:postcss",
-    "esbuild-postcss": "^0.0.4",
     "postcss": "catalog:postcss",
     "postcss-preset-mantine": "catalog:postcss",
     "postcss-simple-vars": "catalog:postcss",
