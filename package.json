@@ -1,6 +1,7 @@
 {
-  "name": "front",
+  "name": "next-mantine-turborepo",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
