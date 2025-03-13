@@ -1,6 +1,6 @@
 # Next.js Mantine Turborepo Template
 
-This repository is a template for developing modern web applications using Next.js, Mantine UI, and Turborepo. The monorepo architecture optimizes code sharing and development processes.
+This repository is a template for developing modern web applications using Next.js, [Mantine UI](https://mantine.dev/), and Turborepo. The monorepo architecture optimizes code sharing and development processes.
 
 ## Features
 
