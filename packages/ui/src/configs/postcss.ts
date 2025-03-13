@@ -11,7 +11,6 @@ export const postcssConfig = {
 			},
 		},
 	},
-	autoprefixer: {},
 };
 
 export default postcssConfig; 

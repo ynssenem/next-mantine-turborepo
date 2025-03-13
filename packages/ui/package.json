@@ -6,24 +6,17 @@
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts",
       "style": "./dist/index.css"
     },
     "./styles": "./dist/index.css",
-    "./dist/index.css": "./dist/index.css",
-    "./*": {
-      "import": "./dist/components/*/index.mjs",
-      "require": "./dist/components/*/index.js",
-      "types": "./dist/components/*/index.d.ts",
-      "style": "./dist/components/*/index.css"
-    },
     "./postcss-config": {
       "import": "./dist/configs/postcss.mjs",
-      "require": "./dist/configs/postcss.js"
+      "types": "./dist/configs/postcss.d.ts"
     },
     "./theme": {
       "import": "./dist/configs/theme.mjs",
-      "require": "./dist/configs/theme.js"
+      "types": "./dist/configs/theme.d.ts"
     }
   },
   "files": [
@@ -31,7 +24,8 @@
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch"
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist && rm -rf node_modules"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",

@@ -5,7 +5,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "check-types": "turbo run check-types",
-    "clean": "turbo clean"
+    "clean": "turbo run clean && rm -rf node_modules && rm -rf .turbo"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
