@@ -3,20 +3,24 @@
   "version": "0.0.0",
   "private": true,
   "types": "dist/index.d.ts",
+  "main": "dist/index.js",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts",
-      "style": "./dist/index.css"
+      "style": "./dist/index.css",
+      "require": "./dist/index.js"
     },
     "./styles": "./dist/index.css",
     "./postcss-config": {
       "import": "./dist/configs/postcss.mjs",
-      "types": "./dist/configs/postcss.d.ts"
+      "types": "./dist/configs/postcss.d.ts",
+      "require": "./dist/configs/postcss.js"
     },
     "./theme": {
       "import": "./dist/configs/theme.mjs",
-      "types": "./dist/configs/theme.d.ts"
+      "types": "./dist/configs/theme.d.ts",
+      "require": "./dist/configs/theme.js"
     }
   },
   "files": [
@@ -34,13 +38,14 @@
     "@types/react": "catalog:nodejs",
     "@types/react-dom": "catalog:nodejs",
     "autoprefixer": "catalog:postcss",
+    "esbuild-plugin-preserve-directives": "^0.0.11",
     "postcss": "catalog:postcss",
     "postcss-preset-mantine": "catalog:postcss",
     "postcss-simple-vars": "catalog:postcss",
     "tsup": "catalog:nodejs",
     "typescript": "catalog:nodejs"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@mantine/carousel": "catalog:mantine",
     "@mantine/charts": "catalog:mantine",
     "@mantine/code-highlight": "catalog:mantine",

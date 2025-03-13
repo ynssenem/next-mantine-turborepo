@@ -1,8 +1,5 @@
 {
 	"extends": "@repo/typescript-config/tsup.json",
-	"compilerOptions": {
-		"plugins": [{ "name": "typescript-plugin-css-modules" }]
-	},
 	"include": ["src/**/*.ts", "src/*.ts", "src/**/*.css"],
 	"exclude": ["node_modules", "dist"]
 }

@@ -1,17 +1,20 @@
+import { preserveDirectivesPlugin } from "esbuild-plugin-preserve-directives";
 import { defineConfig } from "tsup";
 
 export default defineConfig((options) => ({
-	entry: ["src/index.ts", "src/configs/*.ts"],
-	format: ["esm"],
+	entry: ["src/**/*.{ts,tsx}"],
+	format: ["esm", "cjs"],
+	clean: true,
 	dts: true,
-	clean: false,
-	sourcemap: true,
-	splitting: true,
-	target: "es2022",
-	external: ["react", "react/jsx-runtime"],
 	minify: !options.watch,
-	treeshake: true,
 	loader: {
 		".css": "default",
 	},
+	esbuildPlugins: [
+		preserveDirectivesPlugin({
+			directives: ["use client", "use strict"],
+			include: /\.(js|ts|jsx|tsx)$/,
+			exclude: /node_modules/,
+		}),
+	],
 }));
