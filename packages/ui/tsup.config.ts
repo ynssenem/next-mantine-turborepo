@@ -1,12 +1,14 @@
 import { preserveDirectivesPlugin } from "esbuild-plugin-preserve-directives";
 import { defineConfig } from "tsup";
 
-export default defineConfig((options) => ({
-	entry: ["src/**/*.{ts,tsx}"],
+export default defineConfig(() => ({
+	entry: ["src/index.ts", "src/configs/*.ts"],
 	format: ["esm", "cjs"],
-	clean: true,
 	dts: true,
-	minify: !options.watch,
+	// clean: true,
+	// sourcemap: true,
+	// splitting: true,
+	// minify: true,
 	loader: {
 		".css": "default",
 	},

@@ -1,7 +1,15 @@
+// "use client";
+
 import { type MantineThemeOverride, createTheme } from "@mantine/core";
 
 const themeOverride: MantineThemeOverride = {
-	/** Put your mantine theme override here */
+	// components: {
+	// 	Button: Button.extend({
+	// 		defaultProps: {
+	// 			variant: "filled",
+	// 		},
+	// 	}),
+	// },
 };
 
 export const Theme: ReturnType<typeof createTheme> = createTheme(themeOverride);

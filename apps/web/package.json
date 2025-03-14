@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack --port 3000",
+    "dev": "next dev --turbopack --port 3010",
     "build": "next build",
     "start": "next start",
     "clean": "rm -rf .next && rm -rf node_modules"
@@ -23,6 +23,8 @@
     "@mantine/nprogress": "catalog:mantine",
     "@mantine/spotlight": "catalog:mantine",
     "@mantine/tiptap": "catalog:mantine",
+    "@next/bundle-analyzer": "catalog:nextjs",
+    "@tabler/icons-react": "catalog:",
     "@repo/ui": "workspace:*",
     "@tiptap/extension-link": "catalog:tiptap",
     "@tiptap/pm": "catalog:tiptap",
