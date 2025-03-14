@@ -7,6 +7,7 @@ catalog:
   "embla-carousel-react": "^8.5.2"
   "recharts": "2"
   "@types/css-modules": "^1.0.5"
+  "@tabler/icons-react": "^3.28.1"
 
 catalogs:
   mantine:
@@ -33,6 +34,7 @@ catalogs:
     "next": "^15.2.2"
     "react": "^19.0.0"
     "react-dom": "^19.0.0"
+    "@next/bundle-analyzer": "^15.1.5"
   tiptap:
     "@tiptap/extension-link": "^2.11.5"
     "@tiptap/pm": "^2.11.5"
