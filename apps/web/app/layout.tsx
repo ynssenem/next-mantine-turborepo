@@ -1,4 +1,4 @@
-import "@mantine/core/styles.css";
+import "@repo/ui/global.css";
 
 import {
 	ColorSchemeScript,

@@ -4,9 +4,8 @@ packages:
 
 catalog:
   "dayjs": "^1.11.13"
-  "embla-carousel-react": "^8.5.2"
+  "embla-carousel-react": "^7"
   "recharts": "2"
-  "@types/css-modules": "^1.0.5"
   "@tabler/icons-react": "^3.28.1"
 
 catalogs:
@@ -29,7 +28,6 @@ catalogs:
     "@types/react": "19.0.10"
     "@types/react-dom": "19.0.4"
     "typescript": "5.8.2"
-    "tsup": "^8.4.0"
   nextjs:
     "next": "^15.2.2"
     "react": "^19.0.0"

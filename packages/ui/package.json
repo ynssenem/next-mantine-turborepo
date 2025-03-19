@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "exports": {
+    "./global.css": "./src/global.css",
     "./postcss.config": "./src/configs/postcss-config.ts",
     "./theme": "./src/configs/theme.ts",
     "./components/*": "./src/components/*/index.ts"
@@ -21,7 +22,7 @@
     "postcss-simple-vars": "catalog:postcss",
     "typescript": "catalog:nodejs"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@mantine/carousel": "catalog:mantine",
     "@mantine/charts": "catalog:mantine",
     "@mantine/code-highlight": "catalog:mantine",
@@ -35,6 +36,7 @@
     "@mantine/nprogress": "catalog:mantine",
     "@mantine/spotlight": "catalog:mantine",
     "@mantine/tiptap": "catalog:mantine",
+    "@tabler/icons-react": "catalog:",
     "@tiptap/extension-link": "catalog:tiptap",
     "@tiptap/pm": "catalog:tiptap",
     "@tiptap/react": "catalog:tiptap",
