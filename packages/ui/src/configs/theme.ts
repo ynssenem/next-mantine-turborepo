@@ -3,6 +3,7 @@
 import { type MantineThemeOverride, createTheme } from "@mantine/core";
 
 const themeOverride: MantineThemeOverride = {
+	primaryColor: "yellow"
 	// components: {
 	// 	Button: Button.extend({
 	// 		defaultProps: {

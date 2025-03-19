@@ -1,5 +1,4 @@
 import "@mantine/core/styles.css";
-import "@repo/ui/styles";
 
 import {
 	ColorSchemeScript,
@@ -7,7 +6,6 @@ import {
 	mantineHtmlProps,
 } from "@mantine/core";
 
-import { MainLayout } from "@repo/ui";
 import { Theme } from "@repo/ui/theme";
 import type { PropsWithChildren } from "react";
 
@@ -28,9 +26,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
 				/>
 			</head>
 			<body>
-				<MantineProvider theme={Theme}>
-					<MainLayout>{children}</MainLayout>
-				</MantineProvider>
+				<MantineProvider theme={Theme}>{children}</MantineProvider>
 			</body>
 		</html>
 	);
