@@ -7,6 +7,14 @@ const withBundleAnalyzer = bundleAnalyzer({
 export default withBundleAnalyzer({
 	reactStrictMode: false,
 	experimental: {
-		optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
+		turbo: {
+			enabled: true,
+		},
+		optimizePackageImports: [
+			"@mantine/core",
+			"@mantine/hooks",
+			"@repo/ui",
+			"@tabler/icons-react",
+		],
 	},
 });
