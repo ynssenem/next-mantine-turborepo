@@ -24,15 +24,15 @@ catalogs:
     "@mantine/spotlight": "^7.17.2"
     "@mantine/tiptap": "^7.17.2"
   nodejs:
-    "@types/node": "^22.13.10"
-    "@types/react": "19.0.10"
+    "@types/node": "^22.13.13"
+    "@types/react": "19.0.12"
     "@types/react-dom": "19.0.4"
     "typescript": "5.8.2"
   nextjs:
-    "next": "^15.2.2"
+    "next": "^15.2.3"
     "react": "^19.0.0"
     "react-dom": "^19.0.0"
-    "@next/bundle-analyzer": "^15.1.5"
+    "@next/bundle-analyzer": "^15.2.3"
   tiptap:
     "@tiptap/extension-link": "^2.11.5"
     "@tiptap/pm": "^2.11.5"
